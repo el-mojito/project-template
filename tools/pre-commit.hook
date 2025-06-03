@@ -9,6 +9,8 @@ if ! [ -x "$(command -v buildifier)"  ]; then
     echo "Follow these instructions to install buildifier: "
     echo "https://github.com/bazelbuild/buildtools/tree/master/buildifier"
     exit 1
+else
+    echo 'buildifier found.'
 fi
 
 # TODO: add this

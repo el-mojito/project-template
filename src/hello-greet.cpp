@@ -1,6 +1,5 @@
-#include "hello-greet.hpp"
 #include <string>
 
-std::string get_greet(const std::string& who) {
-  return "Hello " + who;
-}
+#include "hello-greet.hpp"
+
+std::string get_greet(const std::string& who) { return "Hello " + who; }
