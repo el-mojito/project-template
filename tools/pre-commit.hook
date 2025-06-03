@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Pre-commit hook to auto-run clang-format and buildifier on commited files.
+# Using this method from StackOverflow: https://stackoverflow.com/questions/31057527/git-pre-commit-hook-to-format-and-re-add-files-at-the-same-time
+
+# Check dependencies
+if ! [ -x "$(command -v buildifier)"  ]; then
+    echo 'Error: buildifier is not installed or not found.'
+    echo "Follow these instructions to install buildifier: "
+    echo "https://github.com/bazelbuild/buildtools/tree/master/buildifier"
+    exit 1
+fi
+
+# TODO: add this
