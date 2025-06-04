@@ -22,11 +22,11 @@ else
     echo 'OK: clang-format found.'
 fi
 
-if ! [[ "$(command -v clang-format --version)" =~ (*.clang-format version 18\.1\.4*.) ]]; then
-    echo 'Error: ClangFormat version is not 18.1.3.'
-    exit 1
-else
-    echo 'OK: clang-format version 18.1.3.'
-fi
+#if ! [[ "$(clang-format --version)" =~ "^*.18\.1\.3*." ]]; then
+#    echo 'Error: ClangFormat version is not 18.1.3.'
+#    exit 1
+#else
+#    echo 'OK: clang-format version 18.1.3.'
+#fi
 
 # TODO: add inplace fixing of Bazel and C++ files

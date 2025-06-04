@@ -35,4 +35,4 @@ clean_cache:
 # --------------------------------------
 project_setup: install_hook
 install_hook:
-	ln -sf ./tools/pre-commit.hook ./.git/hooks/pre-commit
+	ln -sf ../../tools/pre-commit.hook .git/hooks/pre-commit
